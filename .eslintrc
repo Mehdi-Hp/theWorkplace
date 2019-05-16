@@ -1,0 +1,58 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true,
+		"jest": true
+	},
+	"plugins": ["jest"],
+	"extends": ["airbnb", "prettier", "prettier/standard"],
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"parser": "babel-eslint",
+		"sourceType": "module"
+	},
+	"rules": {
+		"indent": [2, "tab"],
+		"no-tabs": 0,
+		"no-param-reassign": ["error", { "props": false }],
+		"no-unused-vars": [
+			"error",
+			{
+				"vars": "all",
+				"args": "none",
+				"ignoreRestSiblings": false
+			}
+		],
+		"arrow-body-style": ["error", "always"],
+		"space-before-function-paren": [
+			"error",
+			{
+				"anonymous": "never",
+				"named": "never",
+				"asyncArrow": "always"
+			}
+		],
+		"comma-dangle": ["error", "never"],
+		"consistent-return": "off",
+		"no-shadow": "off",
+		"no-plusplus": "off",
+		"no-prototype-builtins": "off",
+		"no-underscore-dangle": "off",
+		"global-require": "off",
+		"prefer-promise-reject-errors": "off",
+		"function-paren-newline": "off",
+		"no-console": "off",
+		"prefer-arrow-callback": "off",
+		"func-names": "off",
+		"jest/no-disabled-tests": "warn",
+		"jest/no-focused-tests": "error",
+		"jest/no-identical-title": "error",
+		"jest/prefer-to-have-length": "warn",
+		"jest/valid-expect": "error"
+	}
+}
